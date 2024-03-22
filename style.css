@@ -1,0 +1,150 @@
+body {
+	font-family: "DM Sans", sans-serif;
+	background-color: #2f1893;
+}
+
+/* ========= Header ========= */
+
+.header {
+	text-align: center;
+}
+
+/* ======== Nav ========= */
+
+.nav {
+	font-size: 17px;
+	font-weight: 500;
+	/* Eugene: can be replaced by setting classes inside html: "d-flex, justify-content-center" */
+	display: flex;
+	justify-content: center;
+}
+
+.nav__link {
+	margin-left: 30px;
+	color: white;
+	text-decoration: none;
+    /* Eugene: added */
+    transition: color .3s ease;
+}
+
+.nav__link:hover {
+	color: black;
+}
+
+/* ======== Intro ======== */
+
+.intro {
+	display: flex;
+	/* Eugene: make it on center of screen */
+	align-items: center;
+	width: 100%;
+	/* Eugene: 850px->100vh == 100% of screen height */
+	/* height: 850px; */
+	height: 100vh;
+	/* Eugene: you cant go outside project folder! */
+	background: #2f1893 url(./img/img.png) no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+    /* Eugene: for swiper bullets */
+    padding-bottom: 40px;
+}
+
+.intro__title {
+	font-family: "DM Sans", sans-serif;
+	font-size: 24px;
+	color: #fff;
+}
+
+.arrow__left {
+	position: absolute;
+	top: 329px;
+	font-size: 30px;
+	color: #fff;
+	left: 15%;
+	cursor: pointer;
+}
+
+.arrow__right {
+	position: absolute;
+	top: 329px;
+	font-size: 30px;
+	color: #fff;
+	right: 15%;
+	cursor: pointer;
+}
+
+.intro__heading {
+	font-family: "DM Sans", sans-serif;
+	font-size: 72px;
+	color: #fff;
+	margin: 20px;
+	font-weight: 700;
+	line-height: 86px;
+}
+
+.intro__subtitle {
+	font-family: "DM Sans", sans-serif;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 32px;
+	white-space: pre-line; /* переноси рядків та пробіли */
+}
+
+/* ========= Paginator =========== */
+
+/*.paginator{
+    text-align: center;
+}
+
+.page {
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    margin: 40px 0 11px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+}
+*/
+
+/* ========= Button =========== */
+
+.btn--blue {
+	font-family: "DM Sans", sans-serif;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 20px 30px;
+	border-radius: 100px;
+    /* Eugene: ??? */
+    margin-top: 60px;
+	/* margin: 120px; */
+	color: #fff;
+	border: 0;
+	background-color: #482be7;
+	font-weight: 500;
+	text-decoration: none;
+    /* Eugene: added */
+    transition: all .3s ease;
+
+}
+
+.btn--blue:hover {
+	background-color: #604fc0;
+}
+
+/* Eugene: added */
+.swiper {
+    margin-top: 140px;
+}
